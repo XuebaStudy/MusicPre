@@ -22,6 +22,7 @@ theme:
     text: Noto Sans SC
     code: Roboto Mono
   features:
+    - navigation.tabs
     - navigation.instant
     - navigation.tracking
     - content.code.copy
@@ -40,7 +41,8 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - 音乐记录: index.md
+  - 总览:
+    - 首页: index.md
 
 extra_css:
   - stylesheets/extra.css

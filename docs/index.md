@@ -1,6 +1,6 @@
-# 音乐记录
+# 首页
 
-个人音乐录音归档。每条记录包含曲目名、水平（0–5）与备注。
+最近添加的 3 首乐曲。
 
 <!-- RECORDINGS_START -->
 <a class="recording-card" href="recordings/311a8a5a417a/">
