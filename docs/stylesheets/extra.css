@@ -1,47 +1,163 @@
 :root {
   --mp-star: #f5a623;
   --mp-muted: #6b7280;
+  --mp-line: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  --mp-bar-track: color-mix(in srgb, var(--md-default-fg-color) 10%, transparent);
+  --mp-bar-fill: var(--md-accent-fg-color, #f5a623);
 }
 
-.recording-card {
-  display: block;
-  padding: 1rem 1.25rem;
-  margin: 0.75rem 0;
-  border-left: 3px solid var(--md-primary-fg-color);
-  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent);
-  text-decoration: none !important;
-  color: inherit !important;
-  transition: background 0.2s ease;
+/* —— 统一曲目条目（首页 / 分类总览） —— */
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0.75rem 0 1.75rem;
+  border-top: 1px solid var(--mp-line);
 }
 
-.recording-card:hover {
-  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+.track-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0.15rem;
+  border-bottom: 1px solid var(--mp-line);
 }
 
-.recording-card .title {
-  font-size: 1.1rem;
+.track-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.track-title {
+  font-size: 1.02rem;
   font-weight: 600;
-  margin: 0 0 0.35rem;
-}
-
-.recording-card .meta {
-  font-size: 0.85rem;
-  color: var(--mp-muted);
+  line-height: 1.35;
   margin: 0;
 }
 
-.recording-card .notes {
-  margin: 0.5rem 0 0;
-  font-size: 0.95rem;
+.track-level {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  max-width: 11rem;
+}
+
+.track-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--mp-bar-track);
+  overflow: hidden;
+}
+
+.track-bar > i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--mp-bar-fill);
+}
+
+.track-level-text {
+  font-size: 0.78rem;
+  color: var(--mp-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.track-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.track-note {
+  position: relative;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in srgb, var(--md-default-fg-color) 35%, transparent);
+  background: transparent;
+  cursor: help;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.track-note::after {
+  content: "";
+  width: 0.28rem;
+  height: 0.28rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--md-default-fg-color) 45%, transparent);
+}
+
+.track-note-bubble {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 0.45rem);
+  min-width: 8rem;
+  max-width: 16rem;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.4rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--mp-line);
+  box-shadow: 0 6px 18px color-mix(in srgb, #000 12%, transparent);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 5;
+}
+
+.track-note:hover .track-note-bubble,
+.track-note:focus .track-note-bubble,
+.track-note:focus-within .track-note-bubble {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.track-go {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.7rem;
+  border-radius: 0.35rem;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 45%, transparent);
+  color: var(--md-primary-fg-color) !important;
+  text-decoration: none !important;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.track-go:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 10%, transparent);
+  border-color: var(--md-primary-fg-color);
+}
+
+@media (max-width: 600px) {
+  .track-row {
+    align-items: flex-start;
+  }
+
+  .track-level {
+    max-width: 100%;
+  }
 }
 
 .level-stars {
   color: var(--mp-star);
   letter-spacing: 0.05em;
-}
-
-.level-stars .empty {
-  opacity: 0.25;
 }
 
 .audio-player {
