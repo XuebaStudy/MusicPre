@@ -27,12 +27,15 @@ jobs:
         with:
           enable-cache: true
           cache-dependency-glob: requirements.txt
+          python-version: "3.12"
 
       - name: Install MkDocs Material
-        run: uv pip install --system -r requirements.txt
+        run: |
+          uv venv .venv
+          uv pip install -r requirements.txt
 
       - name: Build site
-        run: mkdocs build --strict
+        run: .venv/bin/mkdocs build --strict
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
