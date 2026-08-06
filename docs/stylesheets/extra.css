@@ -65,7 +65,7 @@
 
 .track-note {
   position: relative;
-  flex: 0 0 auto;
+  flex: 0 0 0.85rem;
   width: 0.85rem;
   height: 0.85rem;
   border-radius: 50%;
@@ -76,6 +76,17 @@
   align-items: center;
   justify-content: center;
   outline: none;
+}
+
+.track-note.is-empty {
+  visibility: hidden;
+  pointer-events: none;
+  cursor: default;
+  border-color: transparent;
+}
+
+.track-note.is-empty::after {
+  display: none;
 }
 
 .track-note::after {
