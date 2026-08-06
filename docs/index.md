@@ -1,24 +1,21 @@
 # 首页
 
-最近添加的 3 首乐曲。
+## 最近添加的 3 首乐曲
 
-<!-- RECORDINGS_START -->
-<a class="recording-card" href="recordings/efc00816ef3a/">
-  <p class="title">春日影-前半段</p>
-  <p class="meta"><span class="level-stars">★★★★☆</span></p>
-  
-</a>
-
-<a class="recording-card" href="recordings/721d7ebabaca/">
-  <p class="title">风轻云暖</p>
-  <p class="meta"><span class="level-stars">★★★☆☆</span></p>
-  
-</a>
-
-<a class="recording-card" href="recordings/311a8a5a417a/">
-  <p class="title">须臾的舒闲</p>
-  <p class="meta"><span class="level-stars">★★★☆☆</span></p>
-  
-</a>
-
-<!-- RECORDINGS_END -->
+<div class="track-list" markdown="0">
+<div class="track-row">
+  <p class="track-title">春日影-前半段</p>
+  <span class="track-stars" title="水平 4/5">★★★★☆</span>  <audio class="track-audio" controls preload="none" controlslist="nodownload noplaybackrate" src="https://data.musicpre.xuebasy.top/audio/efc00816ef3a.mp3"></audio>
+  <a class="track-go" href="/recordings/efc00816ef3a/" aria-label="前往「春日影-前半段」" title="前往曲目"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></a>
+</div>
+<div class="track-row">
+  <p class="track-title">风轻云暖</p>
+  <span class="track-stars" title="水平 3/5">★★★☆☆</span>  <audio class="track-audio" controls preload="none" controlslist="nodownload noplaybackrate" src="https://data.musicpre.xuebasy.top/audio/721d7ebabaca.mp3"></audio>
+  <a class="track-go" href="/recordings/721d7ebabaca/" aria-label="前往「风轻云暖」" title="前往曲目"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></a>
+</div>
+<div class="track-row">
+  <p class="track-title">须臾的舒闲</p>
+  <span class="track-stars" title="水平 3/5">★★★☆☆</span>  <audio class="track-audio" controls preload="none" controlslist="nodownload noplaybackrate" src="https://data.musicpre.xuebasy.top/audio/311a8a5a417a.mp3"></audio>
+  <a class="track-go" href="/recordings/311a8a5a417a/" aria-label="前往「须臾的舒闲」" title="前往曲目"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg></a>
+</div>
+</div>

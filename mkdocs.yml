@@ -44,14 +44,16 @@ nav:
   - 总览:
     - 首页: index.md
   - 动漫:
+    - 总览: categories/动漫.md
     - "Mygo&Mujica":
-      - 春日影-前半段: recordings/efc00816ef3a.md
+      - ♪ 春日影-前半段: recordings/efc00816ef3a.md
   - 原神:
+    - 总览: categories/原神.md
     - 挪德卡莱:
       - 霜月:
-        - 须臾的舒闲: recordings/311a8a5a417a.md
+        - ♪ 须臾的舒闲: recordings/311a8a5a417a.md
     - 魔女会:
-      - 风轻云暖: recordings/721d7ebabaca.md
+      - ♪ 风轻云暖: recordings/721d7ebabaca.md
 extra_css:
   - stylesheets/extra.css
 
