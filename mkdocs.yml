@@ -41,7 +41,6 @@ markdown_extensions:
 
 nav:
   - 音乐记录: index.md
-  - 样例曲目: recordings/sample.md
 
 extra_css:
   - stylesheets/extra.css

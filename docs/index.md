@@ -5,17 +5,12 @@
 <!-- RECORDINGS_START -->
 <a class="recording-card" href="recordings/311a8a5a417a/">
   <p class="title">须臾的舒闲 3</p>
-  <p class="meta"><span class="level-stars">★★★☆☆</span> · 2026-08-06</p>
+  <p class="meta"><span class="level-stars">★★★☆☆</span></p>
   
 </a>
 <a class="recording-card" href="recordings/5f25555d3ece/">
   <p class="title">temp</p>
-  <p class="meta"><span class="level-stars">★★★☆☆</span> · 2026-08-06</p>
+  <p class="meta"><span class="level-stars">★★★☆☆</span></p>
   <p class="notes">6</p>
-</a>
-<a class="recording-card" href="recordings/sample/">
-  <p class="title">示例 · 片段试听</p>
-  <p class="meta"><span class="level-stars">★★★☆☆</span> · 2026-08-05</p>
-  <p class="notes">站点模板样例（无真实音频）</p>
 </a>
 <!-- RECORDINGS_END -->
