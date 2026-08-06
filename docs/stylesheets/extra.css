@@ -1,0 +1,59 @@
+:root {
+  --mp-star: #f5a623;
+  --mp-muted: #6b7280;
+}
+
+.recording-card {
+  display: block;
+  padding: 1rem 1.25rem;
+  margin: 0.75rem 0;
+  border-left: 3px solid var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent);
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: background 0.2s ease;
+}
+
+.recording-card:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+}
+
+.recording-card .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+}
+
+.recording-card .meta {
+  font-size: 0.85rem;
+  color: var(--mp-muted);
+  margin: 0;
+}
+
+.recording-card .notes {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+.level-stars {
+  color: var(--mp-star);
+  letter-spacing: 0.05em;
+}
+
+.level-stars .empty {
+  opacity: 0.25;
+}
+
+.audio-player {
+  width: 100%;
+  margin: 1.25rem 0;
+}
+
+.recording-detail .meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--mp-muted);
+  margin-bottom: 1rem;
+}
