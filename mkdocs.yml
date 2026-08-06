@@ -54,5 +54,8 @@ nav:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/track-player.js
+
 extra:
   social: []
