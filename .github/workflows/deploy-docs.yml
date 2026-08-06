@@ -31,7 +31,7 @@ jobs:
 
       - name: Install MkDocs Material
         run: |
-          uv venv .venv
+          uv venv --clear .venv
           uv pip install -r requirements.txt
 
       - name: Build site
