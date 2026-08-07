@@ -101,8 +101,8 @@
   position: absolute;
   right: 0;
   bottom: calc(100% + 0.4rem);
-  min-width: 7rem;
-  max-width: 14rem;
+  width: max-content;
+  max-width: 12em; /* ~12 个汉字一行；更短则随内容收窄 */
   padding: 0.4rem 0.55rem;
   border-radius: 0.35rem;
   background: var(--md-default-bg-color);
@@ -112,6 +112,7 @@
   font-size: 0.78rem;
   line-height: 1.4;
   white-space: pre-wrap;
+  word-break: break-word;
   opacity: 0;
   pointer-events: none;
   transform: translateY(3px);
