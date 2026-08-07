@@ -102,7 +102,7 @@
   right: 0;
   bottom: calc(100% + 0.4rem);
   width: max-content;
-  max-width: 12em; /* ~12 个汉字一行；更短则随内容收窄 */
+  max-width: 16em;
   padding: 0.4rem 0.55rem;
   border-radius: 0.35rem;
   background: var(--md-default-bg-color);
