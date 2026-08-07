@@ -6,6 +6,7 @@ audio: https://data.musicpre.xuebasy.top/audio/721d7ebabaca.mp3
 category:
   - 原神
   - 魔女会
+  - 希穆兰卡
 ---
 
 # 风轻云暖
